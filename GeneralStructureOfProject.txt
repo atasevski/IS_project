@@ -1,0 +1,12 @@
+- ABSTRACT - na kraj
+- Introduction - 
+- Related work - drugi trudovi za diabetes, kako pristapile oni
+- Materials and methods - sto kako sme koristele, objasnuvanje za se sto sme pravele vo kratki crti, 
+koja alatka ja koristime za Explainable AI
+- Expiriments and Results - kakvi rezultati sme dobile
+- Discusion (optional) - koi se slabi strani, mozda datasetot e biased
+- Conclusion (and Future Work) - zaklucok
+- Future Work - 
+
+
+
