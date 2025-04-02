@@ -1,0 +1,28 @@
+1.
+Part of Med-Gemini was a full relabeling of MedQA to get a better performance estimate on this important benchmark – where at least 7.4% of examples are unfit for evaluation. Today, we are happy to open source these annotations alongside our evaluation script; we hope this becomes the new standard when evaluating on MedQA. Here is the repository: https://lnkd.in/erjEFqXE MedQA is the go-to benchmark for medical QA as it mirrors the US medical licensing examination (USMLE). With Med-Gemini, we set a new SOTA with 91.1% accuracy. However, we also realized that many questions contain label errors, are outdated or refer to missing lab results. To identify such questions alongside potentially ambiguous with multiple possible answers, we designed a two-step study where at least 3 raters re-annotated each question. In the first step, we just let them answer the question (allowing none or multiple answers) and check for any missing information; in the second step we reveal MedQA’s ground truth to check for label errors. The repository includes the ratings from all raters across both steps in a simple CSV file. For clarity we also include the original MedQA questions and answers as well as a Jupyter Notebook that allows you to reproduce the results in Figure 4b of the paper on your model, computing adjusted accuracies after filtering questions with missing information, label errors as well as ambiguous questions requiring unanimous agreement.
+
+
+
+https://github.com/Google-Health/med-gemini-medqa-relabelling
+
+
+2.
+https://www.kaggle.com/datasets/evidence/medqa-usmle-qa-json-only
+
+https://paperswithcode.com/dataset/medquad
+
+
+3.
+MedQuAD: Medical Question Answering Dataset of 47,457 QA pairs created from 12 NIH websites
+https://github.com/abachaa/MedQuAD
+
+
+4.
+The data of all clinical trials available on ClinicalTrials.gov was downloaded on 29 October 2023 at 4:00 PM Eastern Daylight Time.
+
+The data set is available at:
+https://classic.clinicaltrials.gov/AllPublicXML.zip.
+
+The dataset size in the zip format is 2.1 GB; after extraction, it is 10.5 GB. Over 471,052 clinical trials and research studies are downloaded into 586 folders, each containing an average of 804 studies.
+
+Each of the clinical trials is stored in an XML format. Each clinical trial or XML file contains the following: NCT ID, title, sponsor, collaborator, summary, description, status, start date, completion date (if any), study design, primary outcome, secondary outcome, intervention, eligibility, criteria, location, responsible party, keywords, and conditions.
